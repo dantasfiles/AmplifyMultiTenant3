@@ -1,0 +1,9 @@
+type Todo
+  @model(subscriptions: null)
+  # access rules prevent access to other tenants' todos
+  @auth(rules: [{allow: groups, groupsField: "tenant"}]) {
+  id: ID!
+  tenant: ID!
+  name: String!
+  description: String
+}
