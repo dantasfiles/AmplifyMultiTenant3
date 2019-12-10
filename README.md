@@ -2,7 +2,9 @@ This is an example of a multi-tenant AWS Amplify application.
 
 The code is not runnable as-is -- the repository only contains the crucial files.
 
-The code is based on the various posts at https://github.com/aws-amplify/amplify-cli/issues/318
+The code is based on the various posts at 
+- https://github.com/aws-amplify/amplify-cli/issues/318
+
 and the AWS Amplify docs at
 - https://aws-amplify.github.io/docs/cli-toolchain/quickstart?sdk=js#adding-a-lambda-trigger
 - https://aws-amplify.github.io/docs/cli-toolchain/graphql?sdk=js#dynamic-group-authorization
