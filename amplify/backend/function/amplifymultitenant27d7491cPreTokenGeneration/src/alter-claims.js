@@ -2,7 +2,7 @@ exports.handler = async (event, context, callback) => {
   // get old groups
   const groups = event.request.groupConfiguration.groupsToOverride;
 
-  const tenant = ''; // ADD YOUR TENANT GENERATION LOGIC HERE
+  const tenant = ''; // ADD YOUR TENANT SELECTION LOGIC HERE
 
   // add tenant to groups
   event.response = {
