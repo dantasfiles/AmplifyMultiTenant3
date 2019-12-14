@@ -1,4 +1,4 @@
-This is an example of a multi-tenant AWS Amplify application.
+This is an example of a simple multi-tenant AWS Amplify application.
 
 The code is not runnable as-is -- the repository only contains the crucial files.
 
@@ -17,6 +17,7 @@ This adds a tenant string as a virtual/fake cognito group to the "cognito:groups
 That tenant string, in the cognito:groups field of the access token, can then be used by the generated GraphQL resolvers to enforce the rule "@auth(rules: [{allow: groups, groupsField: "tenant"}])" in "./amplify/backend/api/.../schema.graphql"
 This ensures that a user can only view items associated with their tenant in the database and can only add items with the correct "tenant" field set to the database.
 
+NOTE: One main issue that there is no *AND* operator in `auth` rules so making a more complex system is difficult.
 
 The app was created with the following commands
 - `npx react-native init AmplifyMultiTenant`
@@ -26,4 +27,3 @@ The app was created with the following commands
 - Make sure to select "Override ID Token Claims" trigger in advanced options of `amplify add auth`
 - `amplify add api`
 
-NOTE: One main issue that there is no *AND* operator in `auth` rules so making a more complex system is difficult.
