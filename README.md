@@ -17,7 +17,7 @@ This adds a tenant string as a virtual/fake cognito group to the "cognito:groups
 That tenant string, in the cognito:groups field of the access token, can then be used by the generated GraphQL resolvers to enforce the rule "@auth(rules: [{allow: groups, groupsField: "tenant"}])" in "./amplify/backend/api/.../schema.graphql"
 This ensures that a user can only view items associated with their tenant in the database and can only add items with the correct "tenant" field set to the database.
 
-NOTE: One main issue that there is no *AND* operator in `auth` rules so making a more complex system is difficult.
+NOTE: One main issue that there is no *AND* operator in `auth` rules so making a more complex access control policy is difficult. Manually editing the generated resolvers is one way to make more complex rules.
 
 The app was created with the following commands
 - `npx react-native init AmplifyMultiTenant`
