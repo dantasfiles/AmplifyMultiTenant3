@@ -25,3 +25,5 @@ The app was created with the following commands
 - `amplify add auth`
 - Make sure to select "Override ID Token Claims" trigger in advanced options of `amplify add auth`
 - `amplify add api`
+
+NOTE: One main issue that there is no *AND* operator in `auth` rules so making a more complex system is difficult.
