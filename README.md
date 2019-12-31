@@ -2,4 +2,4 @@ This is **Method 3: Virtual Cognito Groups** for creating multi-tenant AWS Ampli
 
 See the associated post for instructions and documentation
 
-https://medium.com/@dantasfiles/creating-a-simple-multi-tenant-aws-amplify-mobile-app-e26119ab8246
+https://medium.com/@dantasfiles/multi-tenant-aws-amplify-cc3252c4def4
