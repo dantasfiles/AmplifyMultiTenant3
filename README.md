@@ -1,4 +1,4 @@
-This is an example of a simple multi-tenant AWS Amplify application using React Native
+This is **Method 3: Virtual Cognito Groups** for creating multi-tenant AWS Amplify application using React Native.
 
 See the associated post for instructions and documentation
 
